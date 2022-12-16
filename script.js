@@ -9,17 +9,12 @@ for(i=0; i<size; i++){
     container.appendChild(box);
 }
 
-const boxes = document.querySelectorAll(".box");
+addEventListener("click", (e) =>{
+    if (e.target.classList[0] !== "box") return;
+    e.target.classList.toggle("active");
+});
 
 addEventListener("mouseover", (e) => {
     if (e.target.classList[0] !== "box") return;
     e.target.classList.add("hover");
-});
-
-addEventListener("click", (e) =>{
-    if (e.target.classList[0] !== "box") return;
-
-    console.log("click ");
-    console.log(e.target.classList);
-    e.target.classList.toggle("active");
 });

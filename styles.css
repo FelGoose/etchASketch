@@ -3,13 +3,27 @@
     margin: 0;
 }
 
+h1{
+    color: wheat;
+    padding-bottom: 25px;
+}
+
 body{
+    background-color: rgb(44, 43, 43);
+    box-sizing: border-box;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .container{
     background-color: grey;
+    box-shadow: 12px 12px 2px 1px rgb(25, 25, 25);
     width: 480px;
 
     display:flex;
