@@ -9,10 +9,10 @@ for(i=0; i<size; i++){
     container.appendChild(box);
 }
 
-addEventListener("click", (e) =>{
-    if (e.target.classList[0] !== "box") return;
-    e.target.classList.toggle("active");
-});
+// addEventListener("click", (e) =>{
+//     if (e.target.classList[0] !== "box") return;
+//     e.target.classList.toggle("active");
+// });
 
 addEventListener("mouseover", (e) => {
     if (e.target.classList[0] !== "box") return;
