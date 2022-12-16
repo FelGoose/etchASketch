@@ -4,24 +4,27 @@
 }
 
 body{
-    box-sizing: border-box;
     display: flex;
+    justify-content: center;
 }
 
 .container{
     background-color: grey;
+    width: 480px;
 
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .box{ 
-    width: 10px;
-    height: 10px;
-    border: solid tomato 1px;
+    width: 30px;
+    height: 30px;
 }
 
 .active{
     background-color: tomato;
+}
+
+.hover{
+    background-color: dimgray;
 }
