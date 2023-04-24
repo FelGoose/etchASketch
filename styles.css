@@ -6,35 +6,39 @@
 h1, button{
     padding: 5px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
     background-color: rgb(44, 43, 43);
+    
     box-sizing: border-box;
-    height: 100vh;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-    font-family: 'Roboto', sans-serif;
-    color: wheat;
-
-
 }
 
 .container{
     background-color: grey;
     box-shadow: 12px 12px 2px 1px rgb(25, 25, 25);
-    width: 480px;
+
+    margin-bottom: 10vh;
+
+    width: 500px;
+    height: 500px;
 
     display:flex;
     flex-wrap: wrap;
+    flex-shrink: 1;
 }
 
 .box{ 
-    width: 30px;
-    height: 30px;
+    /* box size is a multiple of 16, size is handled by js */
+/*  width: 16px;
+    height: 16px;  */
+    background-color: tomato;
 }
 
 .active{
