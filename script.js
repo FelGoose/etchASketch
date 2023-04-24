@@ -28,7 +28,11 @@ const btnBoxSize = document.querySelector('#boxSize');
 function changeSize(){
     boxesPerSide = prompt("How many boxes per side? (Max 100)"); 
     if(boxesPerSide > 100){
-        return(alert("too many boxes! (max 100)"))
+        return(alert("too many boxes! (max 100)"));
+    } else if (!boxesPerSide){
+        return(alert("invalid number, try again!"));
+    } else if (boxesPerSide < 1){
+        return(alert("nunber is too low!"));
     }
     removeDrawing(boxesPerSide);
     newDrawing(boxesPerSide);
